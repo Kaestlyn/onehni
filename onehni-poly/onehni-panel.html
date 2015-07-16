@@ -5,18 +5,37 @@
         :host {
             background-color: #fff;
             display:block;
-            padding: 100px 0;
-            font-family: 'UniversLight';
+            padding: 200px 0;
+            font-family: var(--onehni-fontfamily-default);
         }
         :host[gray] {
              background-color: var(--brand-color-background);
              color: #fff;
         }
         
-        :host ::content *[red] {
+        :host ::content *[colormagenta] {
+            color: var(--brand-color-magenta);
+        }
+        :host ::content *[colororange] {
+            color: var(--brand-color-orange);
+        }
+        :host ::content *[colorcyan] {
+            color: var(--brand-color-cyan);
+        }
+        :host ::content *[colorgreen] {
+            color: var(--brand-color-green);
+        }
+        :host ::content *[colorcharcoal] {
+            color: var(--brand-color-charcoal);
+        }
+        :host ::content *[colorred] {
             color: var(--brand-color-red);
         }
+        :host ::content *[colorgray] {
+            color: var(--brand-color-gray);
+        }
         
+
         :host ::content *[bold]{
             font-family: var(--onehni-fontfamily-bold);
         }
