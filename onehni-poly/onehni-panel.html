@@ -1,0 +1,60 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="onehni-styles.html" />
+<dom-module id="onehni-panel">
+    <style>
+        :host {
+            background-color: #fff;
+            display:block;
+            padding: 100px 0;
+            font-family: 'UniversLight';
+        }
+        :host[gray] {
+             background-color: var(--brand-color-background);
+             color: #fff;
+        }
+        
+        :host ::content *[red] {
+            color: var(--brand-color-red);
+        }
+        
+        :host ::content *[bold]{
+            font-family: var(--onehni-fontfamily-bold);
+        }
+        
+        :host ::content p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+        :host ::content h1 {
+            padding:0;
+            margin:10px 0;
+            margin-left:-2px; /*the font has some spacing before characters. this fixes it*/
+            font-size: 56px;
+            font-family: "UniversLight";
+        }
+        
+        @media (max-width: 600px) {
+           :host ::content h1 {
+                font-size: 36px;
+            }
+        }
+
+        
+        :host ::content img {
+            max-width: 100%;
+        }
+    </style>
+    <template>
+        <div class="container">
+            <content></content>
+        </div>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-panel"
+    });
+</script>

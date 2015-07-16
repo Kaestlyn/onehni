@@ -1,0 +1,53 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="onehni-styles.html" />
+<link rel="import" href="../bower_components/paper-ripple/paper-ripple.html">
+
+<dom-module id="onehni-one-header">
+    <style>
+        :host[magenta] ::content h1{
+            color: var(--brand-color-magenta);
+        }
+        
+        :host[orange] ::content h1{
+            color: var(--brand-color-orange);
+        }
+        
+        :host[cyan] ::content h1{
+            color: var(--brand-color-cyan);
+        }
+        
+        :host[green] ::content h1{
+            color: var(--brand-color-green);
+        }
+        
+        :host[charcoal] ::content h1{
+            color: var(--brand-color-charcoal);
+        }
+        
+        :host[red] ::content h1{
+            color: var(--brand-color-red);
+        }
+        
+         :host[gray] ::content h1{
+            color: var(--brand-color-gray);
+        }
+        
+        :host ::content h1 {
+            margin-top: 0;
+            font-size: 56px;
+            font-family: "UniversLight";
+        }
+        
+        h1 span { color: var(--brand-color-charcoal); }
+    </style>
+    <template>
+        <h1><span bold>ONE </span><content></content></h1>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-one-header"
+    });
+</script>
