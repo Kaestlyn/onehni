@@ -2,6 +2,7 @@
 <link rel="import" href="onehni-styles.html" />
 <dom-module id="onehni-panel">
     <style>
+        
         :host {
             background-color: #fff;
             display:block;
@@ -35,6 +36,8 @@
             color: var(--brand-color-gray);
         }
         
+        
+        
 
         :host ::content *[bold]{
             font-family: var(--onehni-fontfamily-bold);
@@ -50,11 +53,12 @@
             margin:10px 0;
             margin-left:-2px; /*the font has some spacing before characters. this fixes it*/
             font-size: 56px;
-            font-family: "UniversLight";
+            font-family: var(--onehni-fontfamily-default);
         }
         
         @media (max-width: 600px) {
-           :host ::content h1 {
+            :host { padding: 100px 0; }
+            :host ::content h1 {
                 font-size: 36px;
             }
         }
