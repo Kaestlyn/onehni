@@ -1,0 +1,31 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="onehni-styles.html" />
+<dom-module id="onehni-divider">
+    <style>
+        div {
+            height:20px;
+        }
+        
+        .row { margin:0};
+        
+        .magenta { background-color:var(--brand-color-magenta); }
+        .orange { background-color:var(--brand-color-orange); }
+        .green { background-color:var(--brand-color-green); }
+        .cyan { background-color:var(--brand-color-cyan); }
+    </style>
+    <template>
+        <div class="row">
+            <div class="col-xs-3 magenta"></div>
+            <div class="col-xs-3 orange"></div>
+            <div class="col-xs-3 green"></div>
+            <div class="col-xs-3 cyan"></div>
+        </div>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-divider"
+    });
+</script>

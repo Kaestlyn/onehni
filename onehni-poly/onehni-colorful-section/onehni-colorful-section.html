@@ -1,52 +1,74 @@
 <link rel="import" href="../bower_components/polymer/polymer.html" />
 <link rel="import" href="onehni-styles.html" />
-<link rel="import" href="../bower_components/paper-ripple/paper-ripple.html">
 
 <dom-module id="onehni-colorful-section">
     <style>
-        :host[magenta] ::content h1{
+        :host[magenta]::content h1 {
             color: var(--brand-color-magenta);
             margin-top: 0;
         }
         
-        :host[orange] ::content h1{
+        :host[orange]::content h1 {
             color: var(--brand-color-orange);
             margin-top: 0;
         }
         
-        :host[cyan] ::content h1{
+        :host[cyan]::content h1 {
             color: var(--brand-color-cyan);
             margin-top: 0;
         }
         
-        :host[green] ::content h1{
+        :host[green]::content h1 {
             color: var(--brand-color-green);
             margin-top: 0;
         }
         
-        :host[charcoal] ::content h1{
+        :host[charcoal]::content h1 {
             color: var(--brand-color-charcoal);
             margin-top: 0;
         }
         
-        :host[red] ::content h1{
+        :host[red]::content h1 {
             color: var(--brand-color-red);
             margin-top: 0;
         }
         
-         :host[gray] ::content h1{
+        :host[gray]::content h1 {
             color: var(--brand-color-gray);
             margin-top: 0;
         }
         
-        :host ::content span {
+        :host::content span {
             font-family: perpetua;
             font-style: italic;
-            
-            font-size:26px;
+            font-size: 26px;
         }
-
         
+        
+        
+        :host::content h1 {
+            font-size: 36px;
+        }
+        
+        :host::content p {
+            font-size: 18px;
+        }
+        
+        :host::content span {
+            font-size: 22px;
+        }
+        
+        @media(max-width: 991px) {
+            :host::content h1 {
+                font-size: 28px;
+            }
+            :host::content p {
+                font-size: 14px;
+            }
+            :host::content span {
+                font-size: 18px;
+            }
+        }
     </style>
     <template>
         <content></content>
