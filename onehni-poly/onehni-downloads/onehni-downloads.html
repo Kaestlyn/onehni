@@ -1,0 +1,51 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html" />
+<link rel="import" href="../../bower_components/paper-button/paper-button.html" />
+<link rel="import" href="../onehni-styles.html" />
+<dom-module id="onehni-downloads">
+    <style>
+        h1 {
+            margin-bottom: 50px;
+        }
+        
+        .magenta paper-button {
+            background-color: var(--brand-color-magenta);
+        }
+        
+        .orange paper-button {
+            background-color: var(--brand-color-orange);
+        }
+        
+        .green paper-button {
+            background-color: var(--brand-color-green);
+        }
+        
+        paper-button {
+            color: var(--brand-color-white);
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+    <template>
+        <h1 colorcyan>Downloads</h1>
+        <div class="row">
+            <div class="col-sm-4 col-xs-12 magenta">
+                <paper-button><i class="fa fa-file-pdf-o"></i> File1.pdf</paper-button>
+            </div>
+            <div class="col-sm-4 col-xs-12 orange">
+                <paper-button><i class="fa fa-file-pdf-o"></i> File1.pdf</paper-button>
+            </div>
+            <div class="col-sm-4 col-xs-12 green">
+                <paper-button><i class="fa fa-file-pdf-o"></i> File1.pdf</paper-button>
+            </div>
+
+        </div>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-downloads"
+    });
+</script>
