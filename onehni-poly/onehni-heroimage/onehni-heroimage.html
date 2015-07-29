@@ -1,0 +1,46 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../onehni-poly/onehni-styles.html" />
+
+<dom-module id="onehni-heroimage">
+    <style>
+        div {
+            height: 500px;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        
+        @media(max-width: 1600px) {
+            div {height: 400px;}
+        }
+        
+        @media(max-width: 1200px) {
+            div {height: 350px;}
+        }
+        
+        @media(max-width: 800px) {
+            div {height: 300px;}
+        }
+        
+        @media(max-width: 400px) {
+            div {height: 200px;}
+        }
+    </style>
+    <template>
+        <div class="one-hni-hero"></div>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-heroimage",
+        ready: function() {
+            function getRandomIntInclusive(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            var randomIndex = getRandomIntInclusive(0, 4);
+            var url = this.resolveUrl("./hero" + randomIndex + ".jpg");
+            $(".one-hni-hero").css("background-image", "url(" + url + ")");
+        }
+    });
+</script>

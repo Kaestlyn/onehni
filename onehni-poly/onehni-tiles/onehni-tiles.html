@@ -1,0 +1,84 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../onehni-colorful-section/onehni-colorful-section.html" />
+<link rel="import" href="onehni-styles.html" />
+<dom-module id="onehni-tiles">
+    <style>
+        img {
+            width: 100%;
+        }
+        
+        onehni-colorful-section {
+            position: absolute;
+            margin:20px;
+        }
+        
+        img.placeholder {
+            visibility: hidden;
+        }
+        
+        .row.no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        
+        .row.no-gutters > [class^="col-"],
+        .row.no-gutters > [class*=" col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    </style>
+    <template>
+        <div class="row no-gutters">
+            <div class="col-sm-6 col-xs-12">
+                <onehni-colorful-section green>
+                    <span>One Promise</span>
+                    <h1>BEST BUSINESS FIT.</h1>
+                    <p>With ONE, you will experience a true, complete and sustained solution tuned to your needs as they evolve. You can stop pulling together suppliers. You can stop making trade-offs that limit your flexibility and speed. Instead, you can
+                        start asking for more. You can harness HNI’s innovative business practices and our can-do culture of member-owners to define and deliver outcomes that matter to your business.</p>
+                </onehni-colorful-section>
+                <img class="placeholder" src="./tile1.jpg" />
+            </div>
+            <div class="col-sm-6 col-xs-12"><img src="./tile1.jpg" /></div>
+            <div class="col-sm-6 col-xs-12"><img src="./tile2.jpg" /></div>
+            <div class="col-sm-6 col-xs-12">
+                <onehni-colorful-section cyan>
+                    <span>One Portfolio</span>
+                    <h1>BREADTH, DEPTH AND
+DIVERSE INNOVATION.</h1>
+                    <p>ONE combines and activates products and services of all HNI companies and partners. Each HNI company stays focused on very specific customer needs. This collectively results in the broadest perspective in workplace solutions, meaning
+                        the ONE portfolio can deliver the smartest solutions across many categories, segments and applications. As a ONE customer, it means you can mix and match to meet an unlimited set of cost, design and performance goals.</p>
+                </onehni-colorful-section>
+                <img class="placeholder" src="./tile1.jpg" />
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <onehni-colorful-section magenta>
+                    <span>One Partner</span>
+                    <h1>UNCOMMON INSIGHT
+AND RESPONSIVENESS.</h1>
+                    <p>The ONE team is seasoned, skilled and eager to understand the specific challenges you face. We have the tools and processes necessary to diagnose and serve your needs as they unfold over time. We value our relationships and know that
+                        we have to earn the right to serve you every day.</p>
+                </onehni-colorful-section>
+                <img class="placeholder" src="./tile1.jpg" />
+            </div>
+            <div class="col-sm-6 col-xs-12"><img src="./tile3.jpg" /></div>
+            <div class="col-sm-6 col-xs-12"><img src="./tile4.jpg" /></div>
+            <div class="col-sm-6 col-xs-12">
+                <onehni-colorful-section orange>
+                    <span>One Team</span>
+                    <h1>SERVING YOU CONSISTENTLY,
+ANYWHERE, IN EVERY WAY.</h1>
+                    <p>In partnership with our global distribution network, ONE can coordinate locally and globally sourced products and services around the world, leveraging our operating companies in North America, China and India, and our strategic partnerships
+                        in Europe, the Middle East and South America. As a ONE customer, this means you can maintain a global procurement standard and brand image, while still permitting local control and optimization. </p>
+                </onehni-colorful-section>
+                <img class="placeholder" src="./tile1.jpg" />
+            </div>
+        </div>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-tiles"
+    });
+</script>

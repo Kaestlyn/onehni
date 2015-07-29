@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../onehni-poly/onehni-styles.html" />
+
+<dom-module id="onehni-logobar">
+    <style>
+        :host {
+            display: block;
+        }
+        
+        div {
+            clear:both;
+            height: 500px;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-image: url("./logobar.png");
+            height: 250px;
+        }
+        
+        @media(max-width: 787px) {
+            div {
+                height: 150px;
+            }
+        }
+    </style>
+    <template>
+        <div></div>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-logobar"
+    });
+</script>
