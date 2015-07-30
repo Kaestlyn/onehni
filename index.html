@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 </head>
-<!--[if (gt IE 9)|!(IE)]><!--><supported-browser></supported-browser><!--<![endif]-->
+
 <body unresolved>
 	<onehni-panel>
 		<onehni-opcos></onehni-opcos>
@@ -40,8 +40,13 @@
 	<onehni-panel gray>
 		<onehni-footer></onehni-footer>
 	</onehni-panel>
-
-
+	<!--[if (gt IE 9)|!(IE)]><!--><supported-browser></supported-browser><!--<![endif]-->
+	<script>
+		//redirect to old site if IE9 or less
+		if($("supported-browser").length == 0){
+			location = "/oldversion";
+		}
+	</script>
 </body>
 
 </html>

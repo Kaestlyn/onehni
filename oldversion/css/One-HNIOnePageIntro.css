@@ -1,0 +1,171 @@
+﻿@font-face
+{
+    font-family: OneHNIBrandFont;
+    src: url(../fonts/universltstd.ttf);
+}
+
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    /*font-family: 'Univers LT Std 55', Arial, Helvitica;*/
+    font-family: OneHNIBrandFont, Arial, Helvitica;
+    font-size: .85em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.tablepadding {
+    padding: 0;
+    border-spacing: 0;
+}
+.header {
+    clear: both;
+    height: 15px;
+}
+
+#footer {
+    clear: both;
+    background-color: #00aeef;
+    background-image:url('../images/FooterBackground.png');
+    background-repeat: repeat-x;
+    height: 90px;
+}
+
+    #footer p {
+        font-size: 1.5em;
+        padding-top: 25px;
+        vertical-align: middle;
+        color: #ffffff;
+    }
+
+    #footer a, a:link, a:visited, a:active, a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+
+.content-wrapper {
+    margin: auto;
+    width: 95%;
+    max-width: 1000px;
+}
+
+
+h1, h2, h3 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+h1 {
+    font-size: 4.7em;
+    line-height: 0.9em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1em;
+}
+
+    p.opco {
+        line-height: 50px;
+        font-size: .75em;
+        color: #8f8b8b;
+    }
+
+#intro p {
+    font-size: 1.25em;
+}
+
+#digitalbooklet p {
+    font-size: 1.4em;
+}
+
+#digitalbooklet p, a, a:link, a:visited, a:active, a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+#digitalbooklet a:hover {
+    color: #808080;
+    text-decoration: underline;
+}
+
+
+p.power {
+    font-size: 1.7em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border: 0;
+}
+
+#OneHNILogo {
+    width: 378px;
+    height: 144px;
+}
+
+#CompanyLogos li {
+    display: inline-block;
+    margin: 25px;
+    color: #000;
+    background: #fff;
+    background: rgba(255,255,255, 0.5);
+    vertical-align: bottom;
+    line-height: 3.5em;
+}
+/* Mobile Browser Settings */
+
+/* #Media Queries */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 985px) {
+    #CompanyLogos li {
+        margin: 10px;
+    }
+
+    #OneHNILogo {
+        width: 178px;
+        height: 68px;
+    }
+
+    h1 {
+        font-size: 2.7em;
+    }
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    #CompanyLogos li {
+        margin: 10px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (max-width : 480px) {
+    
+}
