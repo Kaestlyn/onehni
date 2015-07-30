@@ -1,0 +1,44 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html" />
+<link rel="import" href="../onehni-styles.html" />
+<dom-module id="onehni-footer">
+    <style>
+        img {
+            width: 100%;
+        }
+        
+        p {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        
+        p a {
+            color: var(--brand-color-green);
+        }
+    </style>
+    <template>
+        <div class="row">
+            <div class="col-sm-9">
+                <p>
+                    Kary Minehart
+                    <br /> Strategic Account Manager
+                    <br />
+                    <a href="http://one-hni.com">ONE from HNI</a>
+                    <br />
+                    <a href="mailto:minehartk@one-hni.com">minehartk@one-hni.com</a>
+                    <br />
+                    <a href="tel:563-299-8223">563-299-8223</a>
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-3"><img src="./one-logo-white.png" /></div>
+        </div>
+
+
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-footer"
+    });
+</script>
