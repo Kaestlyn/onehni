@@ -6,7 +6,17 @@
             height:20px;
         }
         
-        .row { margin:0; }
+        .row { margin: 0 };
+        
+        .row.no-gutters {
+                margin-right: 0;
+                margin-left: 0;
+            }
+            .row.no-gutters > [class^="col-"],
+            .row.no-gutters > [class*=" col-"] {
+                padding-right: 0;
+                padding-left: 0;
+            }
         
         .magenta { background-color:var(--brand-color-magenta); }
         .orange { background-color:var(--brand-color-orange); }
@@ -14,7 +24,7 @@
         .cyan { background-color:var(--brand-color-cyan); }
     </style>
     <template>
-        <div class="row">
+        <div class="row nogutters">
             <div class="col-xs-3 magenta"></div>
             <div class="col-xs-3 orange"></div>
             <div class="col-xs-3 green"></div>

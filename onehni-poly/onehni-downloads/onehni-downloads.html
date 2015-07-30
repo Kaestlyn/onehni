@@ -23,23 +23,29 @@
             color: var(--brand-color-white);
             width: 100%;
             text-align: center;
-            font-size: 30px;
-            margin:20px 0;
+            font-size: 18px;
+            margin: 20px 0;
         }
+        
+        paper-button a {
+            color: var(--brand-color-white);
+        }
+        
     </style>
     <template>
         <h1 colorcyan>Downloads</h1>
         <div class="row">
             <div class="col-sm-4 col-xs-12 magenta">
-                <paper-button><i class="fa fa-file-pdf-o"></i> File1.pdf</paper-button>
-            </div>
-            <div class="col-sm-4 col-xs-12 orange">
-                <paper-button><i class="fa fa-file-pdf-o"></i> File1.pdf</paper-button>
-            </div>
-            <div class="col-sm-4 col-xs-12 green">
-                <paper-button><i class="fa fa-file-pdf-o"></i> File1.pdf</paper-button>
+                <paper-button><a href="../../downloads/SinglePageBooklet.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> ONE from HNI Brand Book</a></paper-button>
             </div>
 
+            <div class="col-sm-4 col-xs-12 green">
+                <paper-button><a href="../../downloads/one_global_brochureEV.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> HNI International Brochure</a></paper-button>
+            </div>
+
+            <div class="col-sm-4 col-xs-12 orange">
+                <paper-button><a href="../../downloads/HNI Corporation Annual Report.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> HNI Annual Report</a></paper-button>
+            </div>
         </div>
     </template>
 
