@@ -1,0 +1,45 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html" />
+<link rel="import" href="../onehni-styles.html" />
+<dom-module id="onehni-footer-contact">
+    <style>
+        p {
+            margin: 0;
+            margin-bottom: 30px;
+            height:150px;
+        }
+        
+        p a {
+            color: var(--brand-color-green);
+        }
+    </style>
+    <template>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <p>
+                    <span>[[name]]</span>
+                    <br /><span>[[job]]</span>
+                    <br />
+                    <span>[[region]]</span>
+                    <br />
+                    <a href="[[mailto(email)]]">[[email]]</a>
+                    <br />
+                    <a href="[[tel(phone)]]">[[phone]]</a>
+                </p>
+            </div>
+           
+
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: "onehni-footer-contact",
+        mailto: function(email) {
+            return "mailto:" + email;
+        },
+        tel: function(phone) {
+            return "tel:" + phone
+        }
+    });
+</script>
