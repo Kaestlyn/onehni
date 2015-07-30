@@ -40,13 +40,15 @@
 	<onehni-panel gray>
 		<onehni-footer></onehni-footer>
 	</onehni-panel>
-	<!--[if (gt IE 9)|!(IE)]><!--><supported-browser></supported-browser><!--<![endif]-->
+	<!--[if lte IE 9]>
 	<script>
 		//redirect to old site if IE9 or less
 		if($("supported-browser").length == 0){
 			location = "/oldversion";
 		}
 	</script>
+	<![endif]-->
+
 </body>
 
 </html>
